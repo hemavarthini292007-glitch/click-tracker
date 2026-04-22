@@ -1,18 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Click Tracker</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background-color: #f0f0f0;
+}
+.container {
+text-align: center;
+background: white;
+padding: 40px;
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+button {
+background-color: #2ea44f;
+color: white;
+border: none;
+padding: 15px 40px;
+font-size: 18px;
+border-radius: 6px;
+cursor: pointer;
+}
+</style>
 </head>
 <body>
+<div class="container">
 <h1>Welcome</h1>
 <p>Click the button below</p>
-<form action="https://formspree.io/f/mwvarylj"
+<form action="https://formspree.io/f/xqewyjqv"
 method="POST">
 <input type="hidden" name="message"
-value="Someone clicked!" />
+value="Someone clicked the button!" />
 <input type="hidden" name="_subject"
 value="Button Clicked!" />
 <button type="submit">Click Here</button>
 </form>
+</div>
 </body>
 </html>
