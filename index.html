@@ -21,6 +21,14 @@ padding: 40px;
 border-radius: 10px;
 box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
+input {
+padding: 10px;
+width: 100%;
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+}
 button {
 background-color: #2ea44f;
 color: white;
@@ -29,19 +37,22 @@ padding: 15px 40px;
 font-size: 18px;
 border-radius: 6px;
 cursor: pointer;
+margin-top: 10px;
 }
 </style>
 </head>
 <body>
 <div class="container">
 <h1>Welcome</h1>
-<p>Click the button below</p>
+<p>Please enter your details</p>
 <form action="https://formspree.io/f/xqewyjqv"
 method="POST">
-<input type="hidden" name="message"
-value="Someone clicked the button!" />
+<input type="text" name="name"
+placeholder="Your Name" required />
+<input type="email" name="email"
+placeholder="Your Email ID" required />
 <input type="hidden" name="_subject"
-value="Button Clicked!" />
+value="Someone Clicked Your Button!" />
 <button type="submit">Click Here</button>
 </form>
 </div>
